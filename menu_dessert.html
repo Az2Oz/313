@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Mobile Application</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.0a4.1.min.css" />
+    <link rel="stylesheet" href="swatch-e-custom.css"/>
+    <script src="js/jquery-1.5.2.min.js"></script>
+    <script src="js/jquery.mobile-1.0a4.1.min.js">
+  </script>
+  </head>
+  <body background="img/bg.png">
+    <section id="swatch-e" data-role="page" data-theme="d">
+      <header data-role="header"><h1>UrJoice</h1></header>
+      <div class="content" data-role="content">
+        <h3>Dessert</h3>
+        <p>Fresh after main dish your choice now</p>
+        <form  action="formprocessor.php" method="post">
+          <div data-role="fieldcontain">
+            <label for="select-dessert">Your choice</label><br>
+            <select id="select-dessert"
+                    name="select-dessert"
+					data-native-menu="false"
+                    multiple="multiple">
+              <option value="choose" data-placeholder="true">Choose...</option>
+              <optgroup label="With Wine"> <!--http://allrecipes.com-->
+                <option value="StrawberriesandWine">Strawberries and Wine
+					<br><img src="img/dessert/StrawberriesandWine.jpg" width="80%">
+				</option>
+              </optgroup>
+              <optgroup label="Tasteee">  <!--http://allrecipes.com--> 
+                <option value="UrjoicePecorinoPasta">Strawberry Cobbler</option>
+                <option value="No1RolledSugarCookies" disabled="disabled">No1 Rolled Sugar Cookies(Soon)</option>
+                <option value="PumpkinAppleCobbler">Pumpkin Apple Cobbler</option>
+				<option value="TheBestBananaPudding">The Best Banana Pudding</option>                
+              </optgroup>
+            </select>
+          </div>
+        </form>
+        <div data-role="controlgroup" data-type="horizontal">
+          <a href="#" data-role="button">Yes</a>
+          <a href="#" data-role="button">No</a>
+          <a href="#" data-role="button">Cancel</a>
+        </div>
+      </div>
+      <footer data-role="footer"><h1>Click2Call</h1></footer>
+    </section>
+  </body>
+</html>
+					
